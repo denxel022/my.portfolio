@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Home</title>
+  <link rel="stylesheet" href="C:\Users\Lenovo-T14\Desktop\.portfolio\files\portfolio\files\.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>My Portfolio</h1>
+    <nav>
+        <a href="C:\Users\Lenovo-T14\Desktop\.portfolio\files\portfolio\files\home.html"><i class="fas fa-home"></i> Home</a>
+        <a href="C:\Users\Lenovo-T14\Desktop\.portfolio\files\portfolio\files\about.html"><i class="fas fa-info-circle"></i> About Me</a>
+        <a href="C:\Users\Lenovo-T14\Desktop\.portfolio\files\portfolio\files\contact.html"><i class="fas fa-phone"></i> Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="home">
+      <h2>Welcome to My Portfolio</h2>
+      <div class="user-info">
+        <img src="c:\Users\Lenovo-T14\Documents\Image 2024-11-22 at 17.00.36_f3068c4f.jpg" alt="User Photo" id="user-photo">
+        <p>Click on my photo to learn more about me!</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 My Portfolio</p>
+    <div class="social-icons">
+      <a href="https://twitter.com" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://linkedin.com" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+  </footer>
+
+  <!-- Modal for User Info -->
+  <div class="modal" id="userModal">
+    <div class="modal-content">
+      <h2>About Me</h2>
+      <p>Here is more detailed information about me.</p>
+      <button class="btn" onclick="closeModal()">Close</button>
+    </div>
+  </div>
+
+  <script>
+    const userPhoto = document.getElementById('user-photo');
+    const userModal = document.getElementById('userModal');
+
+    userPhoto.onclick = function () {
+      userModal.style.display = 'flex';
+    };
+
+    function closeModal() {
+      userModal.style.display = 'none';
+    }
+  </script>
+</body>
+</html>
